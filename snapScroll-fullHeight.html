@@ -4,11 +4,70 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 	<style>
+		.margintop0 {
+			margin-top: 0;
+		}
+		.margintop10 {
+			margin-top: 10px;
+		}
+		.margintop20 {
+			margin-top: 20px;
+		}
+		.marginbottom0 {
+			margin-bottom: 0;
+		}
+		.marginbottom10 {
+			margin-bottom: 10px;
+		}
+		.marginbottom20 {
+			margin-bottom: 20px;
+		}
+		.marginlr0 {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		.marginlr10 {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.marginlr20 {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.paddingtop0 {
+			padding-top: 0;
+		}
+		.paddingtop10 {
+			padding-top: 10px;
+		}
+		.paddingtop20 {
+			padding-top: 20px;
+		}
+		.paddingbottom0 {
+			padding-bottom: 0;
+		}
+		.paddingbottom10 {
+			padding-bottom: 10px;
+		}
+		.paddingbottom20 {
+			padding-bottom: 20px;
+		}
+		.paddinglr0 {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.paddinglr10 {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.paddinglr20 {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
 		body {
 		  font-family: "Cabin", sans-serif;
 		  background-color: #F0F3F4;
-		  padding: 0;
-		  margin: 0;
 		}
 
 		img {
@@ -16,28 +75,25 @@
 		}
 
 		h2 {
-			color:#FFF;
-			margin:0 10px 20px;
+			color:#FFF;			
 		}
 
 		widget {
 			background:#FFF;
 			position: relative;
 		    border-radius: 20px;
-		    height: 98%;
-		    font-weight: 600;
-		    font-size: 1em;		    
-		    margin-bottom: 20px;
+		    font-weight: 600; 		    
 		    display: inline-block;
 		    width: 100%;
+		    height: 98%;
+		}
+
+		widget.title {
+			height: 90%;
 		}
 
 		widget.overview {
 			background:linear-gradient(152.76deg, rgb(61, 145, 190) 26.25%, rgb(133, 38, 99) 84.79%);
-		}
-
-		widget.title {
-		    height: 90%;
 		}
 
 		#scroller {
@@ -51,7 +107,6 @@
 
 		#scroller section {		  
 		  scroll-snap-align: start;
-		  padding:20px 20px 0;		  
 		}
 
 		#scroller section.language {
@@ -64,11 +119,10 @@
 
 		.scrollable {
 			overflow-y: scroll;
-		  	scroll-snap-type: y mandatory;
+		  scroll-snap-type: y mandatory;
 		}
 
 		#scroller section.moduleAdPlacement {
-			padding: 20px;
 			text-align: center;
 		}
 
@@ -83,7 +137,6 @@
 			height:80px;
 			z-index:2;
 			background-color: rgba(255,255,255,0.8);
-			font-size:1em;
 		}
 		div#adPlacement section {
 		  	scroll-snap-align: start;	  	
@@ -94,7 +147,6 @@
 		    background-color: rgba(255, 255, 255, 0.8);
 		    border: 2px solid #FFF;
 		    border-radius: 10px;
-		    padding: 10px;
 		    position: absolute;
 		    top: 7px;
 		    left: 7px;
@@ -103,13 +155,67 @@
 		    text-align: center;
 		}
 		div#adPlacement section div h3 {
-			font-size: 1em;
-			margin: 0 0 5px;
+			font-size: 14px;
 		}
 		div#adPlacement section div p {
-			font-size: 0.8em;
-			margin: 0;
+			font-size: 12px;
 		}
+
+		@media (min-resolution: 2dppx) {
+		    body {
+		        font-size: 1.2rem; 
+		    }		    
+				.margintop10 {
+					margin-top: 20px;
+				}
+				.margintop20 {
+					margin-top: 40px;
+				}
+				.marginbottom10 {
+					margin-bottom: 20px;
+				}
+				.marginbottom20 {
+					margin-bottom: 40px;
+				}
+				.marginlr10 {
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+				.marginlr20 {
+					margin-left: 40px;
+					margin-right: 40px;
+				}
+				.paddingtop10 {
+					padding-top: 20px;
+				}
+				.paddingtop20 {
+					padding-top: 40px;
+				}
+				.paddingbottom10 {
+					padding-bottom: 20px;
+				}
+				.paddingbottom20 {
+					padding-bottom: 40px;
+				}
+				.paddinglr10 {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+				.paddinglr20 {
+					padding-left: 40px;
+					padding-right: 40px;
+				}
+				h2 {
+					font-size: 52px;
+				}
+				div#adPlacement section div h3 {
+					font-size: 28px;					
+				}
+				div#adPlacement section div p {
+					font-size: 24px;
+				}
+		}
+
 	</style>
 	<script type="text/javascript">
 		$('#scroller').on('scroll', function () {
@@ -117,57 +223,57 @@
 		});
 	</script>
 </head>
-<body>
+<body class="margintop0 marginbottom0 marginlr0 paddingtop0 paddingbottom0 paddinglr0">
 <article id="scroller" class="scrollable">
   <div>
     <img src="images/mobileHeader.png">
-	<img src="images/dateSelect.png">
+	<img class="marginbottom10" src="images/dateSelect.png">
   </div>
-  <section>
+  <section class="paddingtop20 paddinglr20 paddingbottom20">
     <widget class="overview"><img src="images/OverallTime.png"></widget>
   </section>
-  <section>
+  <section class="paddingtop0 paddinglr20 paddingbottom20">
     <widget class="overview"><img src="images/Achievements.png"></widget>
   </section>
-  <section class="language">
-    <h2>Language Placement Test</h2>
+  <section class="language paddingtop20 paddinglr20 paddingbottom20">
+    <h2 class="margintop0 marginlr10 marginbottom20">Language Placement Test</h2>
     <widget class="title"><img src="images/Language-PlacementTestResult.png"></widget>
   </section>
-  <section class="language">
+  <section class="language paddingtop0 paddinglr20 paddingbottom20">
     <widget><img src="images/Language-PlacementTestGradeChart.png"></widget>    
   </section>
-  <section class="language">
+  <section class="language paddingtop0 paddinglr20 paddingbottom20">
     <widget><img src="images/Language-PlacementTestComparison.png"></widget>
   </section>
-  <section class="moduleAdPlacement">
+  <section class="moduleAdPlacement paddingtop20 paddinglr20 paddingbottom20">
   	<img src="images/builtAd.png">
   </section>
-  <section class="language">
-    <h2>Language</h2>
+  <section class="language paddingtop20 paddinglr20 paddingbottom20">
+    <h2 class="margintop0 marginlr10px marginbottom20px">Language</h2>
     <widget class="title"><img src="images/Language-ModuleTime.png"></widget>
   </section>
-  <section class="language">
-    <widget><img src="images/Language-ProblemsCompleted.png"></widget>
+  <section class="language paddingtop0 paddinglr20 paddingbottom20">
+    <widgetclass="marginbottom20"><img src="images/Language-ProblemsCompleted.png"></widget>
   </section>
-  <section class="language">   
+  <section class="language paddingtop20 paddinglr20 paddingbottom20">
     <widget><img src="images/Language-SkillsCompleted.png"></widget>
   </section>
-  <section class="moduleAdPlacement">
+  <section class="moduleAdPlacement paddingtop20 paddinglr20 paddingbottom20">
   	<img src="images/uploadedAd.png">
   </section>
-  <section class="factFluency">
-    <h2>Fact Fluency</h2>
+  <section class="factFluency paddingtop20 paddinglr20 paddingbottom20">
+    <h2 class="margintop0 marginlr10px marginbottom20px">Fact Fluency</h2>
     <widget class="title"><img src="images/FactFluency-ModuleTime.png"></widget>
   </section>
-  <section class="factFluency">    
+  <section class="factFluency paddingtop20 paddinglr20 paddingbottom20">
     <widget><img src="images/FactFluency-FactTypePracticed.png"></widget>
   </section>
 </article>
 <div id="adPlacement" class="scrollable">
-	<section class="ad"><div><h3>First Sponsor Name</h3><p>This is the first ad in the ad placement.</p></div></section>
-	<section class="ad"><div><h3>Second Sponsor Name</h3><p>This is the second ad in the ad placement.</p></div></section>
-	<section class="ad"><div><h3>Third Sponsor Name</h3><p>This is the third ad in the ad placement.</p></div></section>
-	<section class="ad"><div><h3>Fourth Sponsor Name</h3><p>This is the fourth ad in the ad placement.</p></div></section>
+	<section class="ad"><div class="paddingtop10 paddingbottom10 paddinglr10"><h3 class="margintop0 marginlr0 marginbottom10">First Sponsor Name</h3><p class="margintop0 marginlr0 marginbottom0">This is the first ad in the ad placement.</p></div></section>
+	<section class="ad"><div class="paddingtop10 paddingbottom10 paddinglr10"><h3 class="margintop0 marginlr0 marginbottom10">Second Sponsor Name</h3><p class="margintop0 marginlr0 marginbottom0">This is the second ad in the ad placement.</p></div></section>
+	<section class="ad"><div class="paddingtop10 paddingbottom10 paddinglr10"><h3 class="margintop0 marginlr0 marginbottom10">Third Sponsor Name</h3><p class="margintop0 marginlr0 marginbottom0">This is the third ad in the ad placement.</p></div></section>
+	<section class="ad"><div class="paddingtop10 paddingbottom10 paddinglr10"><h3 class="margintop0 marginlr0 marginbottom10">Fourth Sponsor Name</h3><p class="margintop0 marginlr0 marginbottom0">This is the fourth ad in the ad placement.</p></div></section>
 </div>
 </body>
 </html>
