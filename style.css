@@ -130,6 +130,17 @@ widget.overview {
 	width: 300px;
 }
 
+#scroller section.moduleAdPlacement75 {
+	text-align: center;
+	height:75%;
+	display:flex;
+	align-items: center;
+}
+
+#scroller section.moduleAdPlacement75 img {
+	width:100%;
+}
+
 div#adPlacement {
 	position: absolute;
 	bottom:0;
@@ -140,14 +151,15 @@ div#adPlacement {
 }
 div#adPlacement section {
   	scroll-snap-align: start;	  	
-  	position: relative;
+  	/*position: relative;*/
   	height: 100%;
+  	display:flex;
+  	align-items: center;
 }
 div#adPlacement section div {
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #FFF;
     width: 90%;
-    height: 70%;
     text-align: center;
     margin: 0 auto;
 }
