@@ -181,7 +181,7 @@ div#adPlacement section small {
 	font-size: 14px;
 }
 div#adPlacement section img {
-	width:320px;
+	width:640px;
 }
 
 
@@ -268,8 +268,5 @@ div#adPlacement section img {
 	}
 	div#adPlacement section small {
 	font-size: 28px;
-	}
-	div#adPlacement section img {
-		width:640px;
-	}
+}
 }
