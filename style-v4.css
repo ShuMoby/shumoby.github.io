@@ -277,6 +277,9 @@ div#adPlacement section img {
 		font-size: 28px;
 	}
 	div#adPlacement section small {
-	font-size: 26px;
-}
+		font-size: 26px;
+	}
+	div#adPlacement section img {
+		width:640px;
+	}
 }
