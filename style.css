@@ -1,0 +1,280 @@
+.margintop0 {
+	margin-top: 0;
+}
+.margintop10 {
+	margin-top: 10px;
+}
+.margintop20 {
+	margin-top: 20px;
+}
+.marginbottom0 {
+	margin-bottom: 0;
+}
+.marginbottom5 {
+	margin-bottom: 5px;
+}
+.marginbottom10 {
+	margin-bottom: 10px;
+}
+.marginbottom20 {
+	margin-bottom: 20px;
+}
+.marginlr0 {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.marginlr10 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.marginlr20 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.paddingtop0 {
+	padding-top: 0;
+}
+.paddingtop10 {
+	padding-top: 10px;
+}
+.paddingtop20 {
+	padding-top: 20px;
+}
+.paddingbottom0 {
+	padding-bottom: 0;
+}
+.paddingbottom10 {
+	padding-bottom: 10px;
+}
+.paddingbottom20 {
+	padding-bottom: 20px;
+}
+.paddingbottom80 {
+	padding-bottom: 80px;
+}
+.paddinglr0 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.paddinglr10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.paddinglr20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  background-color: #F0F3F4;
+}
+
+img {
+	width:100%;
+}
+
+h2 {
+	color:#FFF;			
+}
+
+widget {
+	background:#FFF;
+	position: relative;
+    border-radius: 20px;
+    font-weight: 600; 		    
+    display: inline-block;
+    width: 100%;
+}
+
+widget.title {
+	height: 90%;
+}
+
+widget.fullHeight {
+    height: 98%;
+}
+
+widget.overview {
+	background:linear-gradient(152.76deg, rgb(61, 145, 190) 26.25%, rgb(133, 38, 99) 84.79%);
+}
+
+#scroller {
+  height: 100%;
+}
+
+#scroller div {
+  scroll-snap-align: start;	
+  padding:0;		  	
+}
+
+#scroller section {		  
+  scroll-snap-align: start;
+}
+
+#scroller section.language {
+	background-color: #DF7F7E;
+}
+
+#scroller section.factFluency {
+	background-color: #25448E;
+}
+
+.scrollable {
+	overflow-y: scroll;
+  	scroll-snap-type: y mandatory;
+}
+
+#scroller section.moduleAdPlacement {
+	text-align: center;
+}
+
+#scroller section.moduleAdPlacement img {
+	width: 300px;
+}
+
+#scroller section.moduleAdPlacement75 {
+	text-align: center;
+	height:75%;
+	display:flex;
+	align-items: center;
+}
+
+#scroller section.moduleAdPlacement75 img {
+	width:100%;
+}
+
+div#sponsors {
+	position: absolute;
+	bottom:0;
+	width:100%;
+	z-index:2;
+	background-color: rgba(255,255,255,0.8);
+}
+div#sponsors h4 {
+	text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+div#adPlacement {
+	width:100%;
+	height:100px;	
+}
+div#adPlacement section {
+  	scroll-snap-align: start;	  	
+  	height: 100%;  	
+  	text-align: center;
+  	background-color: #FFF4CE;
+}
+div#adPlacement section div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;   
+}
+div#adPlacement section h3 {
+	font-size: 16px;
+}
+div#adPlacement section p {
+	font-size: 15px;
+}
+div#adPlacement section small {
+	font-size: 13px;
+}
+div#adPlacement section img {
+	width:320px;
+}
+
+
+.hide-scrollbar {
+  /* Firefox */
+  scrollbar-width: none; 
+  
+  /* IE and Edge (legacy) */
+  -ms-overflow-style: none; 
+}
+
+/* Chrome, Safari, and newer Edge */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-resolution: 2dppx) {
+    body {
+        font-size: 1.2rem; 
+    }		    
+	.margintop10 {
+		margin-top: 20px;
+	}
+	.margintop20 {
+		margin-top: 40px;
+	}
+	.marginbottom5 {
+		margin-bottom: 10px;
+	}
+	.marginbottom10 {
+		margin-bottom: 20px;
+	}
+	.marginbottom20 {
+		margin-bottom: 40px;
+	}
+	.marginlr10 {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.marginlr20 {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.paddingtop10 {
+		padding-top: 20px;
+	}
+	.paddingtop20 {
+		padding-top: 40px;
+	}
+	.paddingbottom10 {
+		padding-bottom: 20px;
+	}
+	.paddingbottom20 {
+		padding-bottom: 40px;
+	}
+	.paddingbottom80 {
+		padding-bottom: 160px;
+	}
+	.paddinglr10 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.paddinglr20 {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	#scroller section.moduleAdPlacement img {
+		width: 600px;
+	}
+	h2 {
+		font-size: 52px;
+	}
+	div#sponsors {
+		
+	}
+	div#sponsors h4 {
+		font-size: 26px;
+	}
+	div#adPlacement {
+		height:200px;
+	}
+	div#adPlacement section h3 {
+		font-size: 32px;					
+	}
+	div#adPlacement section p {
+		font-size: 28px;
+	}
+	div#adPlacement section small {
+		font-size: 26px;
+	}
+	div#adPlacement section img {
+		width:640px;
+	}
+}
