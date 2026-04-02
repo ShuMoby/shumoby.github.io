@@ -133,15 +133,15 @@ widget.overview {
 	width: 300px;
 }
 
-#scroller section.moduleAdPlacement75 {
-	text-align: center;
-	height:75%;
+#scroller section.moduleAdPlacement70 {
+	justify-content: center;
+	height:70%;
 	display:flex;
 	align-items: center;
 }
 
-#scroller section.moduleAdPlacement75 img {
-	width:100%;
+#scroller section.moduleAdPlacement70 img {
+	width:95%;
 }
 
 div#sponsors {
