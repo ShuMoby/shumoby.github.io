@@ -165,12 +165,7 @@ div#adPlacement section {
   	scroll-snap-align: start;	  	
   	height: 100%;  	
   	text-align: center;
-}
-div#adPlacement section:nth-child(odd) {
 	background-color: #FFF4CE;
-}
-div#adPlacement section:nth-child(even) {
-	background-color: #CEEBFF;
 }
 div#adPlacement section div {
     width: 100%;
